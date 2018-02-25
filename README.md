@@ -2,4 +2,4 @@
 
 # PHOXY
 
-PHOXY is intended to be a general purpose server for IronBase.
+PHOXY is intended to be a general purpose server for IronBase, as well as 
