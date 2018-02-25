@@ -1,0 +1,42 @@
+package phoxy2
+
+const (
+	MESSAGE_FLAG_ENCRYPTED = 0x1
+	MESSAGE_FLAG_TEXT      = 0x2
+
+	// message encryption type
+	MESSAGE_TYPE_MULITPARTY = 0x0
+	MESSAGE_TYPE_OTR        = 0x1
+	MESSAGE_TYPE_CRYPTODOG  = 0x2
+
+	// Storage access control flags
+	FLAG_PUBLIC_ACCESS  = 0x01
+	FLAG_PRIVATE_ACCESS = 0x02
+	FLAG_PEER_ACCESS    = 0x04
+
+	// Client opcodes
+	CMD_SUBSCRIBE       = 0x0000
+	CMD_UNSUBSCRIBE     = 0x0001
+	CMD_STORE_DATA      = 0x0002
+	CMD_FETCH_DATA      = 0x0003
+	CMD_PUBLISH_MESSAGE = 0x0004
+
+	// Server opcodes
+	CMD_REQUEST_RESPONSE = 0x1000
+	CMD_INCOMING_MESSAGE = 0x1001
+
+	// HTTP api ops
+	CANT_CONNECT     = -1
+	AUTH_SUCCESS     = 1
+	AUTH_FAIL        = 2
+	RATE_LIMITED     = 3
+	NAME_IN_USE      = 4
+	CAPTCHA_FAIL     = 5
+	ACCOUNT_LOCKED   = 6
+	NAME_INVALID     = 7
+	REGISTER_SUCCESS = 8
+
+	DATA_FOUND        = 0
+	DATA_NOT_FOUND    = 1
+	DATA_UNAUTHORIZED = 2
+)
